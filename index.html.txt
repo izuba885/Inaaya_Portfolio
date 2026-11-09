@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inaaya Zubaria | Data Science</title>
+  <meta name="description" content="Portfolio of Inaaya Zubaria, a Data Science student. Coursework, projects, and contact.">
+  <style>
+    :root {
+      --navy: #0b1f3a;
+      --navy-mid: #14325a;
+      --ink: #142033;
+      --muted: #3d4d63;
+      --line: #d5deea;
+      --paper: #f4f7fb;
+      --white: #ffffff;
+      --header: 4.25rem;
+      --wrap: 68rem;
+    }
+    * { box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: var(--header);
+    }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--white);
+      font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      overflow-wrap: break-word;
+    }
+    img, svg { max-width: 100%; }
+    a { color: inherit; }
+    .skip {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      background: var(--white);
+      color: var(--navy);
+      padding: 0.5rem 0.8rem;
+      z-index: 30;
+    }
+    .skip:focus { top: 0.5rem; }
+    .wrap {
+      width: min(var(--wrap), calc(100% - 2.5rem));
+      margin-inline: auto;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      height: var(--header);
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--line);
+    }
+    .header-inner {
+      height: 100%;
+      width: min(var(--wrap), calc(100% - 2.5rem));
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      color: var(--navy);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+    }
+    .nav-links a {
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+    }
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      border-bottom-color: var(--navy);
+    }
+    .nav-toggle {
+      display: none;
+      width: 2.75rem;
+      height: 2.75rem;
+      border: 1px solid var(--line);
+      border-radius: 0.5rem;
+      background: var(--white);
+      padding: 0;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.28rem;
+      cursor: pointer;
+    }
+    .nav-toggle-bar {
+      display: block;
+      width: 1.1rem;
+      height: 2px;
+      background: var(--navy);
+    }
+    .hero {
